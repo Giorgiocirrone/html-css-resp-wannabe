@@ -5,7 +5,7 @@ mobile: dai 576px in giù*/
 
 /*mobile first */
 
-@media screen and (max-width : 576px) {
+/*@media screen and (max-width : 576px) {
 
 
 
@@ -15,11 +15,47 @@ mobile: dai 576px in giù*/
         font-size: 15px;
     }
 
-    .row {
+    /*incolonnamento colonne*/
+/* .row {
 
         flex-direction: column;
 
     }
+
+
+/*
+
+
+/*TABLET */
+
+@media screen and (max-width:768px) {
+
+
+
+    /*allineamneto testuale */
+
+
+    .text-center {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    /*centramento colonne*/
+
+    .row {
+
+
+        align-items: center;
+
+
+        flex-direction: column;
+    }
+
+
+
+
 
 
 }
