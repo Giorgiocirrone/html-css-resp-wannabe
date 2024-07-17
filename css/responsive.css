@@ -5,57 +5,49 @@ mobile: dai 576px in giù*/
 
 /*mobile first */
 
-/*@media screen and (max-width : 576px) {
+@media screen and (max-width : 576px) {
 
 
-
-
-    .text {
-        text-align: left;
-        font-size: 15px;
-    }
 
     /*incolonnamento colonne*/
-/* .row {
-
-        flex-direction: column;
-
-    }
-
-
-/*
-
-
-/*TABLET */
-
-@media screen and (max-width:768px) {
-
-
-
-    /*allineamneto testuale */
-
-
-    .text-center {
-
-        display: flex;
-        justify-content: center;
-
-    }
-
-    /*centramento colonne*/
-
     .row {
 
-
-        align-items: center;
-
-
         flex-direction: column;
+
     }
 
 
 
+    /*TABLET */
+
+    @media screen and (max-width:768px) {
 
 
 
-}
+        /*allineamneto testuale */
+
+
+        .text-center {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        /*centramento colonne*/
+
+        .row {
+
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+
+
+
+
+
+
+    }
