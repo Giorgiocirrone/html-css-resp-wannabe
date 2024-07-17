@@ -3,6 +3,23 @@ mobile: dai 576px in giù*/
 
 
 
-/*mmbile first */
+/*mobile first */
 
-@media screen and (min-width : 576px) {}
+@media screen and (max-width : 576px) {
+
+
+
+
+    .text {
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .row {
+
+        flex-direction: column;
+
+    }
+
+
+}
