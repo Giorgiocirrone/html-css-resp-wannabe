@@ -1,53 +1,149 @@
+/*consegna esercizio */
+
 /* tablet: dai 768px in giù
 mobile: dai 576px in giù*/
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*correzione in classe*/
+
+
+/*correzione esercio */
+
+/*tablet non era necessario attivare il media */
+
+
+
+
+.container {
+
+    width: 100%;
+    max-width: 1140px;
+
+}
+
+
+
+
+
+
+/*mobile*/
+
+
+@media screen and (max-width: 576px) {
+
+
+    .row {
+        flex-wrap: wrap;
+
+
+    }
+
+
+    .row .col {
+
+        width: 100%;
+    }
+
+
+
+    /*background color black*/
+    .why-us {
+        background-color: black;
+    }
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+
 
 
 
 /*mobile first */
 
 @media screen and (max-width : 576px) {
+    /*correzione esercizio in classe , usa chrome e metti sotto la soglia */
+
+    /*metti in colonna per il mobile il codice è stato centralizzato quidi agiamo su row hanno messo width 500  usa flex basis  */
 
 
-
-    /*incolonnamento colonne*/
     .row {
 
-        flex-direction: column;
+        /*flex-direction: column;*/
+        flex-wrap: wrap;
 
+        /*
+         potevamo usare wrap con width 100 % non si estende per via della specificità
+        
+         flex wrap 
+
+        impostante il  row-gap : 4rem
+
+         devo avere la stessa potenza scrivere .row.col mi fa vincere a livello di potenza 
+        
+        */
+
+
+
+
+    }
+
+    .row .col {
+        /*flex-grow = 1  ma usalo con wrap */
+
+        width: 100%;
+        margin-bottom: 4rem;
     }
 
 
 
     /*TABLET */
 
-    @media screen and (max-width:768px) {
+    /*parte mia senza correzione marco */
 
 
+    /*allineamneto testuale */
 
-        /*allineamneto testuale */
+    /*non possiamo toccare il container  non c'è bisogno della media query*/
 
-
-        .text-center {
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        /*centramento colonne*/
-
-        .row {
-
-            align-items: center;
-            flex-direction: column;
-        }
+    /*così facendo  non c'è bisogno della media query non abbiamo toccato il codice */
 
 
+    .container {
 
-
-
-
-
+        width: 100%;
+        /*importante per risolvere nell'intervallo 768-1140 ma non se scendo sotto il container spinge fuori*/
+        max-width: 1140px;
+        /*se sono sopra i 1140 mi tiene il 100%*/
 
     }
+
+
+}
+
+
+
+@media screen and (max-width:768px) {
+
+
+    .text-center {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*sabgliato centro solo il bloco !!!!! da non rifare */
+
+    }
+
+    /*centramento colonne*/
+
+    .row {
+
+        align-items: center;
+        flex-direction: column;
+    }
+}
